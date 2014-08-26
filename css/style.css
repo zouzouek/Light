@@ -8,14 +8,24 @@ and open the template in the editor.
     Author     : joseph
 */
 
+body{
+    background:#fff;
+}
+canvas {
 
-            canvas {
-                //background:transparent;
-                //opacity:0.55;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                
-            }
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.center{
+    position:absolute;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}

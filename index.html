@@ -13,10 +13,19 @@ and open the template in the editor.
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
-       
+
         <canvas height="600" width="600" ></canvas>
         <script src="js/animation.js"></script>
- <p>Hello there adventurer !</p>
+        <a >
+            <center><img id="light" class="center" src="img/light77.png"/> </center>
 
+        </a>
+        <script>
+            $(document).ready(function(){
+                $("#light").click(function(){
+                   colorful=!colorful; 
+                });
+            })
+        </script>
     </body>
 </html>
