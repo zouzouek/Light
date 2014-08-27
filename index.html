@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
+       <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
@@ -18,12 +19,26 @@ and open the template in the editor.
         <script src="js/animation.js"></script>
         <a >
             <center>
-                <div class="quote" id="quote">
+                <div class="quote top" id="quote">
                     <blockquote id="embedded-content">
                         The mind is not a vessel to be filled, but a fire to be kindled. 
 
                     </blockquote>
                     <p >--Plutarch</p>
+                </div>
+                 <div class="quote bottom-right" id="quote">
+                    <blockquote id="embedded-content">
+                        Those who do not move, do not notice their chains.
+
+                    </blockquote>
+                    <p >--Rosa Luxemburg</p>
+                </div>
+                <div class="quote bottom-left" id="quote">
+                    <blockquote id="embedded-content">
+                        Knowledge makes a man unfit to be a slave.
+
+                    </blockquote>
+                    <p >--Frederick Douglass</p>
                 </div>
                 <img id="light" class="brain" src="img/light77.png"/> 
             </center>
@@ -33,7 +48,7 @@ and open the template in the editor.
             $(document).ready(function() {
                 $("#light").click(function() {
                     colorful = !colorful;
-                    $("#quote").toggle();
+                    $(".quote").toggle();
                 });
             })
         </script>

@@ -30,7 +30,7 @@ canvas {
 
 }
 #embedded-content {
-    quotes: "\201C" "\201D";
+    quotes: "\201C" "\201D"; 
 
 }
 blockquote#embedded-content:before {
@@ -42,11 +42,24 @@ blockquote#embedded-content:after {
     font-weight: bold;
 }
 .quote{
-    font-style: italic;
+  //  font-style: italic;
+    font-family: 'Niconne', cursive;
+    font-size: larger; 
     position:absolute;
     margin: auto;
+}
+.top{
     top: 10%;
     left: 0;
     right: 0;
     bottom: 0;
+}
+.bottom-right{
+    right: 0;
+    bottom: 10%;
+}
+.bottom-left{
+
+    left: 0;
+    bottom: 10%;
 }
