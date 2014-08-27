@@ -17,9 +17,9 @@ if (canvas.getContext('2d')) {
     ctx.clearRect(0, 0, 600, 600);
     ctx.save();
     // Create radial gradient
-    grad = ctx.createRadialGradient(0, 0, 0, 0, 0, 400);
+    grad = ctx.createRadialGradient(0, 0, 0, 0, 0, 100);
     grad.addColorStop(0, '#fff');
-    grad.addColorStop(1, 'rgb(' + color + ', ' + color + ', ' + color + ')');
+    grad.addColorStop(1, '#000');
 
     // assign gradients to fill
     ctx.fillStyle = grad;

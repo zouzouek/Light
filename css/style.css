@@ -20,7 +20,7 @@ canvas {
     width: 100%;
 
 }
-.center{
+.brain{
     position:absolute;
     margin: auto;
     top: 10%;
@@ -28,4 +28,25 @@ canvas {
     right: 0;
     bottom: 0;
 
+}
+#embedded-content {
+    quotes: "\201C" "\201D";
+
+}
+blockquote#embedded-content:before {
+    content: open-quote;
+    font-weight: bold;
+}
+blockquote#embedded-content:after {
+    content: close-quote;
+    font-weight: bold;
+}
+.quote{
+    font-style: italic;
+    position:absolute;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

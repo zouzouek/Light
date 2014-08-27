@@ -14,16 +14,25 @@ and open the template in the editor.
     </head>
     <body>
 
-        <canvas height="600" width="600" ></canvas>
+        <canvas height="600" width="600"></canvas>
         <script src="js/animation.js"></script>
         <a >
-            <center><img id="light" class="center" src="img/light77.png"/> </center>
+            <center>
+                <div class="quote" id="quote">
+                    <blockquote id="embedded-content">
+                        The mind is not a vessel to be filled, but a fire to be kindled. 
+
+                    </blockquote>
+                    <p class="author">--Plutarch</p>
+                </div>
+                <img id="light" class="brain" src="img/light77.png"/> 
+            </center>
 
         </a>
         <script>
-            $(document).ready(function(){
-                $("#light").click(function(){
-                   colorful=!colorful; 
+            $(document).ready(function() {
+                $("#light").click(function() {
+                    colorful = !colorful;
                 });
             })
         </script>
