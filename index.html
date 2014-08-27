@@ -23,7 +23,7 @@ and open the template in the editor.
                         The mind is not a vessel to be filled, but a fire to be kindled. 
 
                     </blockquote>
-                    <p class="author">--Plutarch</p>
+                    <p >--Plutarch</p>
                 </div>
                 <img id="light" class="brain" src="img/light77.png"/> 
             </center>
@@ -33,6 +33,7 @@ and open the template in the editor.
             $(document).ready(function() {
                 $("#light").click(function() {
                     colorful = !colorful;
+                    $("#quote").toggle();
                 });
             })
         </script>
