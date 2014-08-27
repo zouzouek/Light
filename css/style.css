@@ -42,7 +42,7 @@ blockquote#embedded-content:after {
     font-weight: bold;
 }
 .quote{
-  //  font-style: italic;
+  
     font-family: 'Niconne', cursive;
     font-size: larger; 
     position:absolute;

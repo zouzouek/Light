@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
-       <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
@@ -26,7 +26,7 @@ and open the template in the editor.
                     </blockquote>
                     <p >--Plutarch</p>
                 </div>
-                 <div class="quote bottom-right" id="quote">
+                <div class="quote bottom-right" id="quote">
                     <blockquote id="embedded-content">
                         Those who do not move, do not notice their chains.
 
@@ -49,6 +49,17 @@ and open the template in the editor.
                 $("#light").click(function() {
                     colorful = !colorful;
                     $(".quote").toggle();
+
+                    if (colorful) {
+                        $("#light").animate({
+                            top: "+=30%"
+                        },1000);
+                    }
+                    else{
+                        $("#light").animate({
+                            top: "-=30%"
+                        },1000);
+                    }
                 });
             })
         </script>
