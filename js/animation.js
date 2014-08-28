@@ -59,5 +59,7 @@ if (canvas.getContext('2d')) {
     body.onmousemove = function(event){
         draw(event);
     };
-  
+    body.ontouchmove=function(event){
+        draw(event);
+    }
 }

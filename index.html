@@ -12,6 +12,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/style.css"/>
         <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/blur.min.js"></script>
     </head>
     <body>
 
@@ -19,6 +20,10 @@ and open the template in the editor.
         <script src="js/animation.js"></script>
         <a >
             <center>
+                <div class="message" id="message">
+                    <p>bla bla bla bla bla</p>
+                </div>
+
                 <div class="quote top" id="quote">
                     <blockquote id="embedded-content">
                         The mind is not a vessel to be filled, but a fire to be kindled. 
@@ -44,24 +49,6 @@ and open the template in the editor.
             </center>
 
         </a>
-        <script>
-            $(document).ready(function() {
-                $("#light").click(function() {
-                    colorful = !colorful;
-                    $(".quote").toggle();
-
-                    if (colorful) {
-                        $("#light").animate({
-                            top: "+=30%"
-                        },1000);
-                    }
-                    else{
-                        $("#light").animate({
-                            top: "-=30%"
-                        },1000);
-                    }
-                });
-            })
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
