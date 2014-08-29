@@ -5,11 +5,10 @@
  */
 
 $(document).ready(function() {
-    $("#message").hide();
+    $(".message").hide();
     $("#light").click(function() {
         colorful = !colorful;
         playanimation();
-
     });
 
 });
@@ -20,12 +19,12 @@ function playanimation() {
         $("#light").animate({
             top: "+=30%"
         }, 1000, function() {
-            $("#message").fadeIn("slow");
+            $(".message").fadeIn("slow");
         });
 
     }
     else {
-        $("#message").fadeOut("fast");
+        $(".message").fadeOut("fast");
         $("#light").animate({
             top: "-=30%"
         }, 1000, function() {
