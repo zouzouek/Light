@@ -10,6 +10,9 @@ $(document).ready(function() {
         colorful = !colorful;
         playanimation();
     });
+    $("#join").click(function(){
+        openShare(); 
+    });
 
 });
 function playanimation() {
@@ -17,19 +20,24 @@ function playanimation() {
     if (colorful) {
         $(".quote").toggle();
         $("#light").animate({
-            top: "+=30%"
+            top: "+=40%"
         }, 1000, function() {
-            $(".message").fadeIn("slow");
+            $("#message,#design").fadeIn("slow");
         });
 
     }
     else {
         $(".message").fadeOut("fast");
         $("#light").animate({
-            top: "-=30%"
+            top: "-=40%"
         }, 1000, function() {
             $(".quote").toggle();
 
         });
     }
+}
+
+function openShare(){
+    $("#message").fadeOut("fast");
+    $("#share").fadeIn("slow");
 }
