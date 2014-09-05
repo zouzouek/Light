@@ -10,9 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-
+        <link href='css/Niconne.css' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
     </head>
     <body>
 
@@ -29,15 +29,25 @@ and open the template in the editor.
                     </p>
                     <button class="change" id='join'>Join the change</button>
                 </div>
+                <div class="message center" id="petition">
+                    <p>Sign this petition by filling your full name and age to our cause.
+                        <br>
+                        <input type="text" name="name" placeholder="Full Name" id="name" class="form-input">
+                        <input type="number" name="Age" placeholder="Age" id="age" class="form-input" min="5" max="116"/>
+                    </p>
+                    <p id="error"></p>
+                    <button class="change" id='sign'>Sign</button>
+                </div>
                 <div class="message center" id="share">
-                    <p>Share the message to the people you know.
+                    <p>Thank you for signing <br>.Share the message to the people you know.
                         The more people that signs the more attention we can get.
                     </p>
                     <a href='http://facebook.com' target="_blank"> <img src='img/facebook.png'/></a>
                     <a href='http://twitter.com' target="_blank"><img src='img/twitter.png'/></a>
+                    <p><span id="nb-singatures"></span>  People signed this petition</p>
                 </div>
                 <div class="message bottom" id="design">
-                    <p>Designed by <a href="http://joseph-elkhoury.site90.net"><i>joseph el khoury </i></a></p>
+                    <p>Designed by <a href="http://joseph-elkhoury.site90.net" target="_blank"><i>joseph el khoury </i></a></p>
                 </div>
                 
                 <div class="quote top" id="quote">
