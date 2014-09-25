@@ -28,7 +28,7 @@ if (canvas.getContext('2d')) {
     ctx.fillRect(0, 0, 600, 600);
     ctx.save();
 
-   function draw(event) {
+    function draw(event) {
         ctx.clearRect(0, 0, 600, 600);
         var width = window.innerWidth,
                 height = window.innerHeight,
@@ -55,11 +55,11 @@ if (canvas.getContext('2d')) {
 
         ctx.fillRect(0, 0, 600, 600);
         // ctx.save();
-    };
-    body.onmousemove = function(event){
-        draw(event);
-    };
-    body.ontouchmove=function(event){
-        draw(event);
     }
+    ;
+    body.onmousemove = function (event) {
+        draw(event);
+    };
+   
+   
 }

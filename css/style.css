@@ -88,30 +88,32 @@ blockquote#embedded-content:after {
 }
 .change{
     background:transparent;
-
-    moz-border-radius: 15px;
+    color:black;
+    border-radius: 15px;
     -webkit-border-radius: 15px;
     border: 2px solid #000;
-
+    font-family: 'Niconne', cursive;
+   font-size:  large;
 }
 .form-input{
     background: transparent;
     color:black;
     border:0px;
     border-bottom: solid 1px #000;
-    
+
 }
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #000;
+::-webkit-input-placeholder {  
+    color:    #333;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #000;
-    opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+/*:-moz-placeholder {   
     color:    #000;
     opacity:  1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10+ */
+::-moz-placeholder {  
     color:    #000;
+    opacity:  1;
 }
+:-ms-input-placeholder {  
+    color:    #000;
+}*/

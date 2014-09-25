@@ -10,22 +10,30 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
-       <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+        <link href='css/Niconne.css' rel='stylesheet' type='text/css'>
         <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/isMobile.js"></script>
+        <script>
+            $(window).load(function () {
+                if( isMobile.any() ){
+                    window.location="mobile.html";
+                }
+            });
+        </script>
         <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
     </head>
     <body>
 
         <canvas height="600" width="600"></canvas>
         <script src="js/animation.js"></script>
-        
+
         <div >
             <center>
                 <div class="message center" id="message">
                     <p>The Lebanese people have been living in the dark for a long time.
-                    Deprived of basic rights like electricity , water, safety ,health insurance and Internet.
-                    It is  time for the government policies to reflect the modernity of its people.
-                    We cannot stay in the dark anymore, let us work together to make a change.
+                        Deprived of basic rights like electricity , water, safety ,health insurance and Internet.
+                        It is  time for the government policies to reflect the modernity of its people.
+                        We cannot stay in the dark anymore, let us work together to make a change.
                     </p>
                     <button class="change" id='join'>Join the change</button>
                 </div>
@@ -49,7 +57,7 @@ and open the template in the editor.
                 <div class="message bottom" id="design">
                     <p>Designed by <a href="http://joseph-elkhoury.site90.net" target="_blank"><i>joseph el khoury </i></a></p>
                 </div>
-                
+
                 <div class="quote top" id="quote">
                     <blockquote id="embedded-content">
                         The mind is not a vessel to be filled, but a fire to be kindled. 
