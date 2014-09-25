@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var signingList=[];
+var signingList = [];
 
-$(document).ready(function() {
+$(document).ready(function () {
     $(".message").hide();
-    $("#light").click(function() {
+    $("#light").click(function () {
+        var audio = $("audio")[0];
+        audio.load();
+        audio.play();
         colorful = !colorful;
         playanimation();
     });
-    $("#join").click(function() {
+    $("#join").click(function () {
         openSign();
     });
-    $("#sign").click(function() {
+    $("#sign").click(function () {
         if (ValidateInput()) {
             writeSignature();
 
@@ -32,7 +35,7 @@ function playanimation() {
         $(".quote").toggle();
         $("#light").animate({
             top: "+=40%"
-        }, 1000, function() {
+        }, 1000, function () {
             $("#message,#design").fadeIn("slow");
         });
 
@@ -41,7 +44,7 @@ function playanimation() {
         $(".message").fadeOut("fast");
         $("#light").animate({
             top: "-=40%"
-        }, 1000, function() {
+        }, 1000, function () {
             $(".quote").toggle();
 
         });
@@ -81,33 +84,33 @@ function writeSignature() {
         name: name,
         age: age
     });
-    myFirebaseRef.once('value', function(snapshot) {
-        
+    myFirebaseRef.once('value', function (snapshot) {
+
         fillList(snapshot.val());
 
-    }, function(errorObject) {
+    }, function (errorObject) {
         console.log('The read failed: ' + errorObject.code);
     });
-    
+
     openShare();
 }
 
-function fillList(list){
-    signingList=[];
-    for( var item in list){
+function fillList(list) {
+    signingList = [];
+    for (var item in list) {
         var person = list[item];
-        var signature =person.name+" "+person.age;
+        var signature = person.name + " " + person.age;
         signingList.push(signature);
     }
     setSignatureNb();
 }
 
-function setSignatureNb(){
-      var signatureNb=1;
-     signatureNb= signingList.length;
+function setSignatureNb() {
+    var signatureNb = 1;
+    signatureNb = signingList.length;
     $("#nb-singatures").html(signatureNb);
 }
 
-function displayList(){
-    
+function displayList() {
+
 }
