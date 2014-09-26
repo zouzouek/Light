@@ -8,9 +8,7 @@ var signingList = [];
 $(document).ready(function () {
     $(".message").hide();
     $("#light").click(function () {
-        var audio = $("audio")[0];
-        audio.load();
-        audio.play();
+        
         colorful = !colorful;
         playanimation();
     });
